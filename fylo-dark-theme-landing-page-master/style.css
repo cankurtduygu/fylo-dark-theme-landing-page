@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ================================
    TEXT PRESET 3 (Bold)
 ================================ */
-.text-preset-3b, .container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container .button-container button {
+.text-preset-3b, .container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -206,11 +206,20 @@ body {
   background-color: var(--color-navy-850);
   text-align: center;
   color: var(--color-navy-50);
+  width: 100vw;
+  height: 100vh;
 }
 
 .container1 {
   padding-inline: 4.96875rem;
   margin-block-start: 4.96875rem;
+}
+.container1 .container2 .main-container {
+  width: 1281px;
+  margin-inline: auto;
+}
+.container1 .container2 .main-container .header-container {
+  width: 100%;
 }
 .container1 .container2 .main-container .header-container .logo-container {
   display: flex;
@@ -231,31 +240,39 @@ body {
   color: var(--color-navy-50);
 }
 .container1 .container2 .main-container .header-container .hero-section {
+  width: 734px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 56px;
-  padding-inline: 17.09375rem;
   margin-block-start: 64px;
+  margin-inline: auto;
 }
 .container1 .container2 .main-container .header-container .hero-section img {
-  width: 720px;
+  width: 95%;
   height: 534px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container {
-  margin-block-start: 40px;
+.container1 .container2 .main-container .header-container .hero-section .hero-text-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
 }
-.container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container .button-container button {
-  background-color: var(--color-blue-300);
-  border: none;
+.container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container {
+  width: 589px;
+}
+.container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container p {
+  margin-block-end: 32px;
+}
+.container1 .container2 .main-container .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   width: 280px;
   height: 56px;
+  background-color: var(--color-blue-300);
+  border: none;
+  padding: 0 16px;
   border-radius: 50px;
 }
 .container1 .container2 .main-container .features-section {

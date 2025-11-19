@@ -9,6 +9,7 @@
   margin: 0;
 }
 
+
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -213,17 +214,25 @@ body{
     background-color: var(--color-navy-850);
     text-align: center;
     color: var(--color-navy-50);
+    width: 100vw;
+    height: 100vh;
 }
 
 .container1{
     padding-inline: 4.96875rem;
     margin-block-start: 4.96875rem;
     
+    
     .container2{
 
         .main-container{
+          width: 1281px;
+          margin-inline: auto;
             .header-container{
+              // background-color: blue;
+              width: 100%;
                 .logo-container{
+                  // background-color: red;
                     display: flex;
                      justify-content: space-between;
                      align-items: center;
@@ -245,46 +254,59 @@ body{
                 }
 
                 .hero-section{
+                    // background-color: greenyellow;
+                    width: 734px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 56px;
-                    padding-inline: 17.09375rem;
                     margin-block-start: 64px;
+                    margin-inline: auto;
 
                     img{
-                        width: 720px;
+                        width: 95%;
                         height: 534px;
                         object-fit: cover
                     }
 
                     .hero-text-container{
-                        
+                      width: 100%;
+                      // background-color: orange;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 40px;
+
+                    
                         h1{
                             @extend .text-preset-1;
                         }
 
                         .hero-description-container{
-                            margin-block-start: 40px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            gap: 32px;
+                          // background-color: plum;
+                          width: 589px;
+                          
+                            
 
                             p{
                                 @extend .text-preset-6;
+                                margin-block-end: 32px;
                             }
 
                             .button-container{
-                                button{
-                                    @extend .text-preset-3b;
-                                    background-color: var(--color-blue-300);
-                                    border: none;
-                                    width: 280px;
-                                    height: 56px;
-                                    border-radius: 50px;
+                                width: 280px;
+                                height: 56px;
+                                @extend .text-preset-3b;
+                                background-color: var(--color-blue-300);
+                                border: none;
+                                padding: 0 16px;                                   
+                                border-radius: 50px;
+    
+        
+                                    
+                                   
 
-                                }
+                                
                                 
                             }
                         }
