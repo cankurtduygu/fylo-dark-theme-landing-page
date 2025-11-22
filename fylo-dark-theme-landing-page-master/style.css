@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -98,7 +99,7 @@ h6 {
 /* ================================
    TEXT PRESET 1
 ================================ */
-.text-preset-1, .main-container1 .main-container2 .main-container-3 .testimonial-section .testimonal-description-container h1, .main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container h1 {
+.text-preset-1, .main-container1 .action-section .action-text-container .action-description-container h1, .main-container1 .main-container2 .testimonial-section .testimonal-description-container h1, .main-container1 .main-container2 .header-container .hero-section .hero-text-container h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -109,7 +110,7 @@ h6 {
 /* ================================
    TEXT PRESET 2
 ================================ */
-.text-preset-2, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-top h2, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-top h2, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-bottom h2, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-bottom h2 {
+.text-preset-2, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top h2, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top h2, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom h2, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -120,7 +121,7 @@ h6 {
 /* ================================
    TEXT PRESET 3 (Bold)
 ================================ */
-.text-preset-3b, .main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
+.text-preset-3b, .main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -162,7 +163,7 @@ h6 {
 /* ================================
    TEXT PRESET 6
 ================================ */
-.text-preset-6, .main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container .hero-description-container p {
+.text-preset-6, .main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -173,7 +174,7 @@ h6 {
 /* ================================
    TEXT PRESET 7 (Regular)
 ================================ */
-.text-preset-7, .main-container1 .main-container2 .main-container-3 .testimonial-section .testimonal-description-container p {
+.text-preset-7, .main-container1 .main-container2 .testimonial-section .testimonal-description-container p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -184,7 +185,7 @@ h6 {
 /* ================================
    TEXT PRESET 8 (Regular)
 ================================ */
-.text-preset-8, .main-container1 .main-container2 .footer-section .box h4, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-top p, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-top p, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-bottom p, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-bottom p {
+.text-preset-8, .main-container1 .action-section .action-text-container .action-description-container p, .main-container1 .main-container2 .footer-section .box h4, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top p, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top p, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom p, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -195,7 +196,7 @@ h6 {
 /* ================================
    TEXT PRESET 9 (Bold)
 ================================ */
-.text-preset-9b {
+.text-preset-9b, .main-container1 .main-container2 .footer-section .box .author .author-info h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 10px;
@@ -215,7 +216,7 @@ h6 {
 /* ================================
    TEXT PRESET 10
 ================================ */
-.text-preset-10 {
+.text-preset-10, .main-container1 .main-container2 .footer-section .box .author .author-info p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 7px;
@@ -229,6 +230,7 @@ body {
   color: var(--color-navy-50);
   width: 100vw;
   height: 100vh;
+  position: absolute;
 }
 
 .main-container1 {
@@ -237,35 +239,30 @@ body {
   margin-inline: auto;
 }
 .main-container1 .main-container2 {
-  width: 100%;
   height: 166.480625rem;
   display: flex;
   flex-direction: column;
   gap: auto;
   justify-content: space-between;
 }
-.main-container1 .main-container2 .main-container-3 {
-  max-width: 100%;
-  margin-inline: auto;
-}
-.main-container1 .main-container2 .main-container-3 .header-container {
+.main-container1 .main-container2 .header-container {
   max-width: 100%;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .logo-container {
+.main-container1 .main-container2 .header-container .logo-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .logo-container .navigation-links {
+.main-container1 .main-container2 .header-container .logo-container .navigation-links {
   display: flex;
   justify-content: space-between;
   gap: 3.5rem;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .logo-container .navigation-links a {
+.main-container1 .main-container2 .header-container .logo-container .navigation-links a {
   text-decoration: none;
   color: var(--color-navy-50);
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section {
+.main-container1 .main-container2 .header-container .hero-section {
   max-width: 45.875rem;
   display: flex;
   flex-direction: column;
@@ -274,28 +271,26 @@ body {
   margin-block-start: 4rem;
   margin-inline: auto;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section img {
+.main-container1 .main-container2 .header-container .hero-section img {
   width: 95%;
   height: 33.375rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container {
+.main-container1 .main-container2 .header-container .hero-section .hero-text-container {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  background-color: blue;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container .hero-description-container {
+.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container {
   max-width: 36.8125rem;
-  background-color: red;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container .hero-description-container p {
+.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container p {
   margin-block-end: 2rem;
 }
-.main-container1 .main-container2 .main-container-3 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
+.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   width: 17.5rem;
   height: 3.5rem;
   background-color: var(--color-blue-300);
@@ -303,13 +298,13 @@ body {
   padding: 0 1rem;
   border-radius: 50px;
 }
-.main-container1 .main-container2 .main-container-3 .features-section {
+.main-container1 .main-container2 .features-section {
   display: flex;
   justify-content: center;
   margin-inline: 11rem;
   gap: 10rem;
 }
-.main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-top, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-top, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-bottom {
+.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,40 +312,53 @@ body {
   margin-block-end: 5rem;
   width: 390px;
 }
-.main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-top img, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-top img, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-bottom img, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-bottom img {
+.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top img, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top img, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom img, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom img {
   width: 104px;
   height: 104px;
 }
-.main-container1 .main-container2 .main-container-3 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .main-container-3 .features-section .feature-container-right .feature-icon-container-bottom {
+.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom {
   margin-block-end: 0;
 }
-.main-container1 .main-container2 .main-container-3 .testimonial-section {
-  background-color: yellowgreen;
+.main-container1 .main-container2 .testimonial-section {
   display: flex;
   gap: 56px;
   margin-inline: auto;
 }
-.main-container1 .main-container2 .main-container-3 .testimonial-section img {
+.main-container1 .main-container2 .testimonial-section img {
   width: 614.76px;
   height: 463.63px;
 }
-.main-container1 .main-container2 .main-container-3 .testimonial-section .testimonal-description-container {
+.main-container1 .main-container2 .testimonial-section .testimonal-description-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 516px;
-  background-color: #3440CD;
   margin-block: auto;
   text-align: start;
 }
+.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call {
+  width: 10.375rem;
+  color: var(--color-blue-300);
+  border-bottom: 2px solid var(--color-blue-300);
+}
+.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call img {
+  display: inline;
+  width: 12px;
+  height: 12px;
+}
+.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call p {
+  display: inline;
+}
 .main-container1 .main-container2 .footer-section {
   display: flex;
+  align-items: end;
+  justify-content: space-evenly;
   gap: 40px;
   max-width: 100%;
   padding-inline: auto;
-  height: 259px;
+  height: 14.8rem;
   position: relative;
-  background-color: pink;
+  margin-block-end: 13.75rem;
 }
 .main-container1 .main-container2 .footer-section .img-quotes {
   position: absolute;
@@ -358,21 +366,75 @@ body {
   top: 0;
 }
 .main-container1 .main-container2 .footer-section .box {
-  max-width: 360px;
-  padding: 2rem;
+  max-width: 22.5rem;
+  height: 12.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
   background-color: var(--color-navy-800);
   z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
+  text-align: start;
+  border-radius: 5px;
 }
 .main-container1 .main-container2 .footer-section .box .author {
+  margin-block-start: 1.5rem;
   display: flex;
+  gap: 0.5rem;
 }
 .main-container1 .main-container2 .footer-section .box .author img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .main-container1 .main-container2 .footer-section .box .author .author-info {
   width: 88px;
+}
+.main-container1 .action-section {
+  width: 53.9375rem;
+  height: 17.1875rem;
+  background-color: var(--color-navy-800);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* z-index için gerekli */
+}
+.main-container1 .action-section .action-text-container {
+  width: 44rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-container1 .action-section .action-text-container .action-description-container {
+  width: 42.0625;
+}
+.main-container1 .action-section .action-text-container .action-description-container h1 {
+  margin-block-end: 1rem;
+}
+.main-container1 .action-section .action-text-container .email-container {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  height: 3rem;
+}
+.main-container1 .action-section .action-text-container .email-container .input-area {
+  width: 30rem;
+  height: 100%;
+  border-radius: 50px;
+  border: none;
+  padding-inline-start: 25px;
+}
+.main-container1 .action-section .action-text-container .email-container .btn {
+  width: 12.5rem;
+  height: 100%;
+  border-radius: 50px;
+  background: var(--gradient-1);
+  border: none;
+}
+
+.footer-bottom-section {
+  width: 100vw;
+  height: 27.5625rem;
+  background-color: var(--color-navy-950);
+  position: absolute;
+  margin-top: -140px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
