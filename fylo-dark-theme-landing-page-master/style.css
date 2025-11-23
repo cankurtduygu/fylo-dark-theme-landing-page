@@ -99,7 +99,7 @@ h6 {
 /* ================================
    TEXT PRESET 1
 ================================ */
-.text-preset-1, .main-container1 .action-section .action-text-container .action-description-container h1, .main-container1 .main-container2 .testimonial-section .testimonal-description-container h1, .main-container1 .main-container2 .header-container .hero-section .hero-text-container h1 {
+.text-preset-1, .action-section .action-text-container .action-description-container h1, .main .testimonial-section .testimonal-description-container h1, .main .header-container .hero-section .hero-text-container h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -110,7 +110,7 @@ h6 {
 /* ================================
    TEXT PRESET 2
 ================================ */
-.text-preset-2, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top h2, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top h2, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom h2, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom h2 {
+.text-preset-2, .main .features-section .feature-container-left .feature-icon-container-top h2, .main .features-section .feature-container-right .feature-icon-container-top h2, .main .features-section .feature-container-left .feature-icon-container-bottom h2, .main .features-section .feature-container-right .feature-icon-container-bottom h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -121,7 +121,7 @@ h6 {
 /* ================================
    TEXT PRESET 3 (Bold)
 ================================ */
-.text-preset-3b, .main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
+.text-preset-3b, .main .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -130,7 +130,7 @@ h6 {
 }
 
 /* TEXT PRESET 3 (Regular) */
-.text-preset-3r, .main-container1 .main-container2 .header-container .logo-container .navigation-links ul a {
+.text-preset-3r, .main .header-container .logo-container .navigation-links ul a {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -163,7 +163,7 @@ h6 {
 /* ================================
    TEXT PRESET 6
 ================================ */
-.text-preset-6, .main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container p {
+.text-preset-6, .main .header-container .hero-section .hero-text-container .hero-description-container p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -174,7 +174,7 @@ h6 {
 /* ================================
    TEXT PRESET 7 (Regular)
 ================================ */
-.text-preset-7, .footer-bottom-section .footer-links-container .footer-links a, .footer-bottom-section .footer-links-container .adress-container .adress p, .main-container1 .main-container2 .testimonial-section .testimonal-description-container p {
+.text-preset-7, .footer-bottom-section .footer-links-container .footer-links a, .footer-bottom-section .footer-links-container .adress-container .adress p, .main .testimonial-section .testimonal-description-container p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -185,7 +185,7 @@ h6 {
 /* ================================
    TEXT PRESET 8 (Regular)
 ================================ */
-.text-preset-8, .main-container1 .action-section .action-text-container .action-description-container p, .main-container1 .main-container2 .footer-section .box h4, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top p, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top p, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom p, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom p {
+.text-preset-8, .action-section .action-text-container .action-description-container p, .main .footer-section .box h4, .main .features-section .feature-container-left .feature-icon-container-top p, .main .features-section .feature-container-right .feature-icon-container-top p, .main .features-section .feature-container-left .feature-icon-container-bottom p, .main .features-section .feature-container-right .feature-icon-container-bottom p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -196,7 +196,7 @@ h6 {
 /* ================================
    TEXT PRESET 9 (Bold)
 ================================ */
-.text-preset-9b, .main-container1 .main-container2 .footer-section .box .author .author-info h5 {
+.text-preset-9b, .main .footer-section .box .author .author-info h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 10px;
@@ -216,7 +216,7 @@ h6 {
 /* ================================
    TEXT PRESET 10
 ================================ */
-.text-preset-10, .main-container1 .main-container2 .footer-section .box .author .author-info p {
+.text-preset-10, .main .footer-section .box .author .author-info p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 7px;
@@ -228,45 +228,42 @@ body {
   background-color: var(--color-navy-850);
   text-align: center;
   color: var(--color-navy-50);
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.main-container1 {
-  margin-block-start: 4.96875rem;
+.main {
   max-width: 80.0625rem;
   margin-inline: auto;
-}
-.main-container1 .main-container2 {
+  margin-block-start: 4.96875rem;
   display: flex;
   flex-direction: column;
   gap: 10rem;
 }
-.main-container1 .main-container2 .header-container {
+.main .header-container {
   max-width: 100%;
 }
-.main-container1 .main-container2 .header-container .logo-container {
+.main .header-container .logo-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-container1 .main-container2 .header-container .logo-container .navigation-links ul {
+.main .header-container .logo-container .navigation-links ul {
   display: flex;
   justify-content: space-between;
   gap: 3.5rem;
   list-style: none;
 }
-.main-container1 .main-container2 .header-container .logo-container .navigation-links ul a {
+.main .header-container .logo-container .navigation-links ul a {
   text-decoration: none;
   color: var(--color-navy-50);
   cursor: pointer;
   transition: color 0.3s ease;
   /* smooth geçiş */
 }
-.main-container1 .main-container2 .header-container .logo-container .navigation-links ul a:hover {
+.main .header-container .logo-container .navigation-links ul a:hover {
   color: var(--color-white);
 }
-.main-container1 .main-container2 .header-container .hero-section {
+.main .header-container .hero-section {
   max-width: 45.875rem;
   display: flex;
   flex-direction: column;
@@ -275,40 +272,40 @@ body {
   margin-block-start: 4rem;
   margin-inline: auto;
 }
-.main-container1 .main-container2 .header-container .hero-section img {
-  width: 95%;
-  height: 33.375rem;
+.main .header-container .hero-section img {
+  max-width: 45rem;
+  min-height: 33.375rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-container1 .main-container2 .header-container .hero-section .hero-text-container {
-  max-width: 100%;
+.main .header-container .hero-section .hero-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 }
-.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container {
+.main .header-container .hero-section .hero-text-container .hero-description-container {
   max-width: 36.8125rem;
 }
-.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container p {
+.main .header-container .hero-section .hero-text-container .hero-description-container p {
   margin-block-end: 2rem;
 }
-.main-container1 .main-container2 .header-container .hero-section .hero-text-container .hero-description-container .button-container {
+.main .header-container .hero-section .hero-text-container .hero-description-container .button-container {
   width: 17.5rem;
   height: 3.5rem;
   background-color: var(--color-blue-300);
   border: none;
   padding: 0 1rem;
   border-radius: 50px;
+  cursor: pointer;
 }
-.main-container1 .main-container2 .features-section {
+.main .features-section {
   display: flex;
   justify-content: center;
   margin-inline: 11rem;
   gap: 10rem;
 }
-.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom {
+.main .features-section .feature-container-left .feature-icon-container-top, .main .features-section .feature-container-right .feature-icon-container-top, .main .features-section .feature-container-left .feature-icon-container-bottom, .main .features-section .feature-container-right .feature-icon-container-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,23 +313,23 @@ body {
   margin-block-end: 5rem;
   width: 390px;
 }
-.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-top img, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-top img, .main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom img, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom img {
+.main .features-section .feature-container-left .feature-icon-container-top img, .main .features-section .feature-container-right .feature-icon-container-top img, .main .features-section .feature-container-left .feature-icon-container-bottom img, .main .features-section .feature-container-right .feature-icon-container-bottom img {
   width: 104px;
   height: 104px;
 }
-.main-container1 .main-container2 .features-section .feature-container-left .feature-icon-container-bottom, .main-container1 .main-container2 .features-section .feature-container-right .feature-icon-container-bottom {
+.main .features-section .feature-container-left .feature-icon-container-bottom, .main .features-section .feature-container-right .feature-icon-container-bottom {
   margin-block-end: 0;
 }
-.main-container1 .main-container2 .testimonial-section {
+.main .testimonial-section {
   display: flex;
   gap: 56px;
   margin-inline: auto;
 }
-.main-container1 .main-container2 .testimonial-section img {
+.main .testimonial-section img {
   width: 614.76px;
   height: 463.63px;
 }
-.main-container1 .main-container2 .testimonial-section .testimonal-description-container {
+.main .testimonial-section .testimonal-description-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -340,38 +337,28 @@ body {
   margin-block: auto;
   text-align: start;
 }
-.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call {
+.main .testimonial-section .testimonal-description-container .action-call {
   width: 10.375rem;
   color: var(--color-blue-300);
   border-bottom: 2px solid var(--color-blue-300);
 }
-.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call img {
+.main .testimonial-section .testimonal-description-container .action-call img {
   display: inline;
   width: 12px;
   height: 12px;
 }
-.main-container1 .main-container2 .testimonial-section .testimonal-description-container .action-call p {
+.main .testimonial-section .testimonal-description-container .action-call p {
   display: inline;
 }
-.main-container1 .main-container2 .footer-section {
+.main .footer-section {
   display: flex;
-  align-items: end;
-  justify-content: space-evenly;
-  gap: 40px;
-  max-width: 100%;
-  padding-inline: auto;
-  height: 14.8rem;
+  justify-content: space-between;
   position: relative;
   margin-block-end: 13.75rem;
 }
-.main-container1 .main-container2 .footer-section .img-quotes {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.main-container1 .main-container2 .footer-section .box {
+.main .footer-section .box {
   max-width: 22.5rem;
-  height: 12.5rem;
+  min-height: 12.5rem;
   padding-inline: 1.5rem;
   padding-block: 2rem;
   background-color: var(--color-navy-800);
@@ -379,19 +366,27 @@ body {
   text-align: start;
   border-radius: 5px;
 }
-.main-container1 .main-container2 .footer-section .box .author {
+.main .footer-section .box .author {
   margin-block-start: 1.5rem;
   display: flex;
   gap: 0.5rem;
 }
-.main-container1 .main-container2 .footer-section .box .author img {
+.main .footer-section .box .author img {
   width: 1.5rem;
   height: 1.5rem;
 }
-.main-container1 .main-container2 .footer-section .box .author .author-info {
+.main .footer-section .box .author .author-info {
   width: 88px;
 }
-.main-container1 .action-section {
+.main .footer-section::before {
+  content: url(images/bg-quotes.png);
+  position: absolute;
+  z-index: -10;
+  top: -35px;
+  left: -8px;
+}
+
+.action-section {
   width: 53.9375rem;
   height: 17.1875rem;
   background-color: var(--color-navy-800);
@@ -403,32 +398,32 @@ body {
   z-index: 1;
   /* footer'ın arkasında görünmesi için */
 }
-.main-container1 .action-section .action-text-container {
+.action-section .action-text-container {
   width: 44rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.main-container1 .action-section .action-text-container .action-description-container {
+.action-section .action-text-container .action-description-container {
   width: 42.0625rem;
 }
-.main-container1 .action-section .action-text-container .action-description-container h1 {
+.action-section .action-text-container .action-description-container h1 {
   margin-block-end: 1rem;
 }
-.main-container1 .action-section .action-text-container .email-container {
+.action-section .action-text-container .email-container {
   display: flex;
   gap: 1.5rem;
   width: 100%;
   height: 3rem;
 }
-.main-container1 .action-section .action-text-container .email-container .input-area {
+.action-section .action-text-container .email-container .input-area {
   width: 30rem;
   height: 100%;
   border-radius: 50px;
   border: none;
   padding-inline-start: 25px;
 }
-.main-container1 .action-section .action-text-container .email-container .btn {
+.action-section .action-text-container .email-container .btn {
   width: 12.5rem;
   height: 100%;
   border-radius: 50px;

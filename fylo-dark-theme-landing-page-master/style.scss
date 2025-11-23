@@ -233,21 +233,18 @@ body {
   background-color: var(--color-navy-850);
   text-align: center;
   color: var(--color-navy-50);
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
 }
-
-.main-container1 {
-  margin-block-start: 4.96875rem;
-  max-width: 80.0625rem;
-  margin-inline: auto;
-
-  .main-container2 {
+  .main {
     // height: 166.480625rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
+     max-width: 80.0625rem;
+     margin-inline: auto;
+  // padding-inline: 5rem;
+     margin-block-start: 4.96875rem;
+     display: flex;
+     flex-direction: column;
+     gap: 10rem;
     // justify-content: space-between;
 
     .header-container {
@@ -301,14 +298,12 @@ body {
         margin-inline: auto;
 
         img {
-          width: 95%;
-          height: 33.375rem;
+          max-width: 45rem;
+          min-height: 33.375rem;
           object-fit: cover;
         }
 
         .hero-text-container {
-          max-width: 100%;
-
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -319,7 +314,6 @@ body {
           }
 
           .hero-description-container {
-
             max-width: 36.8125rem;
 
             p {
@@ -335,6 +329,7 @@ body {
               border: none;
               padding: 0 1rem;
               border-radius: 50px;
+              cursor: pointer;
             }
           }
         }
@@ -431,25 +426,13 @@ body {
 
     .footer-section {
       display: flex;
-      align-items: end;
-      justify-content: space-evenly;
-      gap: 40px;
-      max-width: 100%;
-      padding-inline: auto;
-      height: 14.8rem;
-      // background-color: pink;
+      justify-content: space-between;
+      // max-width: 100%;
       position: relative;
       margin-block-end: 13.75rem;
-
-      .img-quotes {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-
       .box {
         max-width: 22.5rem;
-        height: 12.5rem;
+        min-height: 12.5rem;
         padding-inline: 1.5rem;
         padding-block: 2rem;
         background-color: var(--color-navy-800);
@@ -485,6 +468,13 @@ body {
         }
       }
     }
+    .footer-section::before {
+    content: url(images/bg-quotes.png);
+    position: absolute;
+    z-index: -10;
+    top: -35px;
+    left: -8px;
+}
   }
 
   .action-section {
@@ -542,7 +532,7 @@ body {
       }
     }
   }
-}
+
 
 .footer-bottom-section {
   width: 100%;
