@@ -130,7 +130,7 @@ h6 {
 }
 
 /* TEXT PRESET 3 (Regular) */
-.text-preset-3r {
+.text-preset-3r, .main-container1 .main-container2 .header-container .logo-container .navigation-links ul a {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -250,14 +250,21 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main-container1 .main-container2 .header-container .logo-container .navigation-links {
+.main-container1 .main-container2 .header-container .logo-container .navigation-links ul {
   display: flex;
   justify-content: space-between;
   gap: 3.5rem;
+  list-style: none;
 }
-.main-container1 .main-container2 .header-container .logo-container .navigation-links a {
+.main-container1 .main-container2 .header-container .logo-container .navigation-links ul a {
   text-decoration: none;
   color: var(--color-navy-50);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  /* smooth geçiş */
+}
+.main-container1 .main-container2 .header-container .logo-container .navigation-links ul a:hover {
+  color: var(--color-white);
 }
 .main-container1 .main-container2 .header-container .hero-section {
   max-width: 45.875rem;
@@ -393,7 +400,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1; /* footer'ın arkasında görünmesi için */
+  z-index: 1;
+  /* footer'ın arkasında görünmesi için */
 }
 .main-container1 .action-section .action-text-container {
   width: 44rem;
@@ -434,8 +442,10 @@ body {
   background-color: var(--color-navy-950);
   position: relative;
   z-index: -1;
-  margin-top: -140px; /* action-section içine 50px girer; gerektiğinde ayarla */
-  z-index: -1; /* arka planda kalsın */
+  margin-top: -140px;
+  /* action-section içine 50px girer; gerektiğinde ayarla */
+  z-index: -1;
+  /* arka planda kalsın */
   display: flex;
   justify-content: center;
   align-items: center;

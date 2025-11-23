@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 /* 2. Remove default margin */
 * {
   margin: 0;
@@ -99,6 +100,7 @@ h6 {
   /* Gradient */
   --gradient-1: linear-gradient(90deg, #63E1D9 0%, #3440CD 100%);
 }
+
 /* ================================
    TEXT PRESET 1
 ================================ */
@@ -109,6 +111,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 2
 ================================ */
@@ -119,6 +122,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 3 (Bold)
 ================================ */
@@ -129,6 +133,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* TEXT PRESET 3 (Regular) */
 .text-preset-3r {
   font-family: "Raleway", sans-serif;
@@ -137,6 +142,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 4
 ================================ */
@@ -147,6 +153,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 5
 ================================ */
@@ -157,6 +164,7 @@ h6 {
   line-height: 120%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 6
 ================================ */
@@ -167,6 +175,7 @@ h6 {
   line-height: 150%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 7 (Regular)
 ================================ */
@@ -177,6 +186,7 @@ h6 {
   line-height: 150%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 8 (Regular)
 ================================ */
@@ -187,6 +197,7 @@ h6 {
   line-height: 150%;
   letter-spacing: 0px;
 }
+
 /* ================================
    TEXT PRESET 9 (Bold)
 ================================ */
@@ -197,6 +208,7 @@ h6 {
   line-height: 150%;
   letter-spacing: 0.5px;
 }
+
 /* TEXT PRESET 9 (Regular) */
 .text-preset-9r {
   font-family: "Open Sans", sans-serif;
@@ -205,6 +217,7 @@ h6 {
   line-height: 180%;
   letter-spacing: 0.5px;
 }
+
 /* ================================
    TEXT PRESET 10
 ================================ */
@@ -222,7 +235,7 @@ body {
   color: var(--color-navy-50);
   width: 100vw;
   height: 100vh;
-  
+
 }
 
 .main-container1 {
@@ -247,14 +260,33 @@ body {
         align-items: center;
 
         .navigation-links {
-          display: flex;
-          justify-content: space-between;
-          gap: 3.5rem;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.5rem;
+            list-style: none;
 
-          a {
-            text-decoration: none;
-            color: var(--color-navy-50);
+            a {
+              text-decoration: none;
+              color: var(--color-navy-50);
+              @extend .text-preset-3r;
+              cursor: pointer;
+              transition: color 0.3s ease;
+              /* smooth geçiş */
+
+              &:hover {
+                color: var(--color-white);
+      
+              }
+
+
+
+            }
           }
+
+
+
+
         }
       }
 
@@ -372,18 +404,22 @@ body {
         h1 {
           @extend .text-preset-1;
         }
+
         p {
           @extend .text-preset-7;
         }
+
         .action-call {
           width: 10.375rem;
           color: var(--color-blue-300);
           border-bottom: 2px solid var(--color-blue-300);
+
           img {
             display: inline;
             width: 12px;
             height: 12px;
           }
+
           p {
             display: inline;
           }
@@ -404,11 +440,13 @@ body {
       // background-color: pink;
       position: relative;
       margin-block-end: 13.75rem;
+
       .img-quotes {
         position: absolute;
         left: 0;
         top: 0;
       }
+
       .box {
         max-width: 22.5rem;
         height: 12.5rem;
@@ -418,22 +456,28 @@ body {
         z-index: 1;
         text-align: start;
         border-radius: 5px;
+
         h4 {
           @extend .text-preset-8;
         }
+
         .author {
           margin-block-start: 1.5rem;
           display: flex;
           gap: 0.5rem;
+
           img {
             width: 1.5rem;
             height: 1.5rem;
           }
+
           .author-info {
             width: 88px;
+
             h5 {
               @extend .text-preset-9b;
             }
+
             p {
               @extend .text-preset-10;
             }
@@ -452,7 +496,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1; /* footer'ın arkasında görünmesi için */
+    z-index: 1;
+    /* footer'ın arkasında görünmesi için */
 
     .action-text-container {
       width: 44rem;
@@ -505,8 +550,10 @@ body {
   background-color: var(--color-navy-950);
   position: relative;
   z-index: -1;
-  margin-top: -140px; /* action-section içine 50px girer; gerektiğinde ayarla */
-  z-index: -1; /* arka planda kalsın */
+  margin-top: -140px;
+  /* action-section içine 50px girer; gerektiğinde ayarla */
+  z-index: -1;
+  /* arka planda kalsın */
   display: flex;
   justify-content: center;
   align-items: center;
